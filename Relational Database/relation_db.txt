@@ -1,0 +1,18 @@
+Task 1:
+1. staff
+2. sales_outlet
+3. sales_transaction
+4. customer
+5. product
+
+Task 2:
+Attributes:
+1. transaction_id
+2. transaction_date
+3. transaction_time
+4. sales_outlet_id
+5. staff_id
+6. customer_id
+7. product_id
+8. quantity
+9. price
