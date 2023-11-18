@@ -1,0 +1,11 @@
+Step 1:
+for i in `docker ps | awk '{print $1}' | grep -v CONTAINER`; do docker kill $i; done
+
+Step 2:
+docker rm spark-master spark-worker-1 spark-worker-2 # gives you an error
+
+Step 3:
+docker pull bde2020/spark-master:3.1.1-hadoop3.2
+docker pull bde2020/spark-worker:3.1.1-hadoop3.2
+
+docker run --name spark-master -h spark-master -e enable_init_daemon=false -p 4040:4040 -p 8080:8080 -v ./ -d bde2020/spark-master
