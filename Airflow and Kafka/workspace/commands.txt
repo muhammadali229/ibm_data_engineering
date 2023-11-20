@@ -1,0 +1,17 @@
+docker exec -it <container ID from 'docker ps'> /bin/bash
+
+airflow dags list
+
+airflow tasks list example_bash_operator
+
+airflow dags unpause tutorial
+
+airflow dags pause tutorial
+
+-----------------------------------------------------
+Imports
+DAG Arguments
+DAG Definition
+Task Definitions
+Task Pipeline
+-----------------------------------------------------
